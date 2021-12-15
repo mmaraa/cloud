@@ -47,3 +47,16 @@ git config --global user.signingkey 'KEYID'
 git config commit.gpgsign true
 
 ```
+## SSH Authentication
+```bash
+#List available public keys
+gpg --list-public-keys
+
+#Export SSH public key
+gpg --export-ssh-key <PublicKeyID>
+
+#If not working restart gpg-connect-agent
+gpg-connect-agent killagent /bye
+gpg-connect-agent /bye
+
+```
