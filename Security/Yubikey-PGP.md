@@ -42,4 +42,8 @@ git config --global gpg.program 'C:\Program Files (x86)\gnupg\bin\gpg.exe'
 
 #Set Key ID that you are using
 git config --global user.signingkey 'KEYID'
+
+#Set auto sign on
+git config commit.gpgsign true
+
 ```
