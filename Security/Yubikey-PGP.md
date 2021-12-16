@@ -6,7 +6,7 @@ Download simple installer from [GnuPG site](https://gnupg.org/download/index.htm
 Download also [Yubikey smartcard minidriver](https://www.yubico.com/support/download/smart-card-drivers-tools/).
 
 Import public key to target computer.
-## Changing of Yubikey
+## Changing Yubikey to another
 ```bash
 gpg-connect-agent.exe "16844970" "learn --force" /bye
 ```
@@ -43,7 +43,7 @@ git config --global gpg.program 'C:\Program Files (x86)\gnupg\bin\gpg.exe'
 #Set Key ID that you are using
 git config --global user.signingkey 'KEYID'
 
-#Set auto sign on
+#Set auto sign on (per repository)
 git config commit.gpgsign true
 
 ```
