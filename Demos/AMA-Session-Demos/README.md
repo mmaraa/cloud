@@ -9,8 +9,9 @@ az deployment group create -f main.bicep -g 'rg-euw-amademo' --parameters adminP
 ```
 
 ## Resouces during demo
+- VM0 is withtout AMA-client
 - VM1 is already on-boarded with AMA and DCR.
-- VM2 is withtout AMA-client
+
   
 Use this to deploy AMA
 
