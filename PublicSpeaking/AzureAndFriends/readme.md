@@ -1,1 +1,3 @@
-The slide deck from Azure and Friends from 6.10.2022 will be posted on this folder.
+# Azure and Friends
+I had a session about Governing Defender for Cloud in Multicloud in Azure & Friends user group at Elisa's premises on 6.10.2022. Deck is available in this folder:
+- [Governing Defender for Cloud in Multicloud](Governing-MDC.pdf)
