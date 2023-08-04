@@ -5,6 +5,7 @@ winget upgrade --all
 
 # Basics
 winget install --id=AgileBits.1Password -e
+winget install --id=SlackTechnologies.Slack -e
 
 # Data
 winget install --id=Microsoft.AzureDataStudio -e
@@ -24,5 +25,5 @@ winget install --id=Elgato.StreamDeck -e
 winget install --id=Elgato.ControlCenter -e 
 
 # If private
-winget install --id=WhatsApp.WhatsApp -e  
+winget install --id=9NKSQGP7F2NH -e  #WhatsApp
 winget install --id=OpenWhisperSystems.Signal
