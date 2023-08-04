@@ -6,6 +6,7 @@ winget upgrade --all
 # Basics
 winget install --id=AgileBits.1Password -e
 winget install --id=SlackTechnologies.Slack -e
+winget install --id=Spotify.Spotify -e
 
 # Data
 winget install --id=Microsoft.AzureDataStudio -e
