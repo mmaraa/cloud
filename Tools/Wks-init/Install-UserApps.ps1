@@ -7,6 +7,7 @@ winget upgrade --all
 winget install --id=AgileBits.1Password -e
 winget install --id=SlackTechnologies.Slack -e
 winget install --id=Spotify.Spotify -e
+winget install --id=9N1F85V9T8BN -e --accept-package-agreements #Windowds 365
 
 # Data
 winget install --id=Microsoft.AzureDataStudio -e
