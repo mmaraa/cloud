@@ -22,6 +22,9 @@ winget install --id=Microsoft.Bicep -e
 winget install --id=Postman.Postman -e
 winget install --id=Amazon.AWSCLI -e
 
+# Network
+winget install --id=WiresharkFoundation.Wireshark -e
+
 # If physical
 winget install --id=Elgato.StreamDeck -e  
 winget install --id=Elgato.ControlCenter -e 
