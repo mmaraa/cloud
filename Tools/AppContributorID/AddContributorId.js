@@ -16,9 +16,15 @@ javascript: (function () {
         return text.startsWith(domain);
       });
       if (startsWithAllowedDomain) {
-        const processedText = text.replace(/\/[a-z]{2}-[a-z]{2}\//g, "/");
+        // Extract fragment (anchor) if present
+        const hashIndex = text.indexOf('#');
+        const hasFragment = hashIndex !== -1;
+        const urlWithoutFragment = hasFragment ? text.substring(0, hashIndex) : text;
+        const fragment = hasFragment ? text.substring(hashIndex) : '';
+        
+        const processedText = urlWithoutFragment.replace(/\/[a-z]{2}-[a-z]{2}\//g, "/");
         const separator = processedText.includes('?') ? '&' : '?';
-        const modifiedText = processedText + separator + "wt.mc_id=xxxxxx";
+        const modifiedText = processedText + separator + "wt.mc_id=xxxxxx" + fragment;
         navigator.clipboard
           .writeText(modifiedText)
           .then(function () {
