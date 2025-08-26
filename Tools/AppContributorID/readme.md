@@ -14,7 +14,7 @@ This script modifies URLs from specific Microsoft domains to include a contribut
     - `https://code.visualstudio.com`
     - `https://devblogs.microsoft.com`
     - `https://cloudblogs.microsoft.com`
-3. If the text starts with an allowed domain, it modifies the URL to remove language-specific segments (`/en-us/`, `/fi-fi/`, `/sv-se/`) and appends the contributor ID (`?wt.mc_id=xxxxxxx`).
+3. If the text starts with an allowed domain, it modifies the URL to remove language-specific segments (e.g., `/en-us/`, `/en-gb/`, `/de-de/`, `/fr-fr/`, etc.) and appends the contributor ID (`?wt.mc_id=xxxxxxx`).
 4. The modified URL is then written back to the clipboard.
 5. The background color of the webpage changes to yellow if the URL was successfully modified and copied, or red if the URL was not from an allowed domain.
 

@@ -16,7 +16,7 @@ javascript: (function () {
         return text.startsWith(domain);
       });
       if (startsWithAllowedDomain) {
-        const processedText = text.replace(/\/(en-us|fi-fi|sv-se)\//g, "/");
+        const processedText = text.replace(/\/[a-z]{2}-[a-z]{2}\//g, "/");
         const separator = processedText.includes('?') ? '&' : '?';
         const modifiedText = processedText + separator + "wt.mc_id=xxxxxx";
         navigator.clipboard
