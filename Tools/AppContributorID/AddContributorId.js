@@ -16,9 +16,9 @@ javascript: (function () {
         return text.startsWith(domain);
       });
       if (startsWithAllowedDomain) {
-        const modifiedText =
-          text.replace(/\/(en-us|fi-fi|sv-se)\//g, "/") +
-          "?wt.mc_id=xxxxxx";
+        const processedText = text.replace(/\/(en-us|fi-fi|sv-se)\//g, "/");
+        const separator = processedText.includes('?') ? '&' : '?';
+        const modifiedText = processedText + separator + "wt.mc_id=xxxxxx";
         navigator.clipboard
           .writeText(modifiedText)
           .then(function () {
